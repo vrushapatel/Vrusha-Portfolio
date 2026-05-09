@@ -1,0 +1,92 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.hero img{
+    margin-top: 110px;
+    height: 310px;
+    width: 310px;
+    border-radius: 50%;
+    border:6px solid rgb(90, 177, 211);
+}
+
+.hero h1{
+    text-align: center;
+    width: 60%;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.hero h1 span{
+    background: linear-gradient(270deg, rgb(90, 177, 211) 25%, rgb(21, 56, 180) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.hero-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: 0.3s;
+
+    background:
+    linear-gradient(290deg, rgb(105, 205, 245) 5%,rgb(53, 82, 187) 30%) padding-box,
+    linear-gradient(90deg, #00F5FF, #FF00C7, #FFD700, #00FF85, #8A2BE2) border-box;
+
+    background-size: 100% 100%, 300% 300%;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-connect:hover{
+    background:
+        linear-gradient(270deg, rgb(90, 177, 211) 15%, rgb(21, 56, 180) 100%) padding-box,
+        conic-gradient(from 0deg, #00F5FF, #FF00C7, #FFD700, #00FF85, #8A2BE2, #00F5FF) border-box;
+
+    background-size: 100% 100%, 400% 400%;
+    animation: shine 3s linear infinite;
+    transform: scale(1.05);
+}
+
+.hero-resume{
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-resume:hover{
+    border-color: rgb(90, 177, 211);
+}

@@ -1,0 +1,31 @@
+.footer{
+    margin: 50px 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.footer-bottom-right{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.footer-email-input:hover{
+    border: 2px solid white;
+}
+.footer-subscribe:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.footer-top-left p{
+    font-size:22px;
+}
+
